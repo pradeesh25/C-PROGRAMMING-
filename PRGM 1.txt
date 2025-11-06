@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main() {
+    int number;
+
+    printf("--- Number Checker ---\n");
+    printf("Please enter any integer: ");
+    
+    
+    if (scanf("%d", &number) != 1) {
+        
+        printf("Invalid input. Please enter an integer.\n");
+        return 1; // Exit with an error
+    }
+
+   
+    if (number > 0) {
+        printf("\nResult: %d is a POSITIVE number.\n", number);
+    } else if (number < 0) {
+        printf("\nResult: %d is a NEGATIVE number.\n", number);
+    } else {
+        printf("\nResult: The number is ZERO.\n", number);
+    }
+
+    return 0; 
+}
